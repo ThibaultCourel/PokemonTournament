@@ -1,0 +1,14 @@
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BDDAccessLayer\bin\Debug\BDDAccessLayer.dll
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BDDAccessLayer\bin\Debug\BDDAccessLayer.pdb
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BDDAccessLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BDDAccessLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BDDAccessLayer\obj\Debug\BDDAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BDDAccessLayer\obj\Debug\BDDAccessLayer.dll
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BDDAccessLayer\obj\Debug\BDDAccessLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BDDAccessLayer\bin\Debug\BDDAccessLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BDDAccessLayer\bin\Debug\BDDAccessLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BDDAccessLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BDDAccessLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BDDAccessLayer\obj\Debug\BDDAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BDDAccessLayer\obj\Debug\BDDAccessLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BDDAccessLayer\obj\Debug\BDDAccessLayer.pdb

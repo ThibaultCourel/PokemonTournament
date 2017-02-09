@@ -1,0 +1,73 @@
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\PokemonTournamentWPF.exe.config
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\PokemonTournamentWPF.exe
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\PokemonTournamentWPF.pdb
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.csprojResolveAssemblyReference.cache
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\MainWindow.g.cs
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\App.g.cs
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF_MarkupCompile.cache
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF_MarkupCompile.lref
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\MainWindow.baml
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.g.resources
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.Properties.Resources.resources
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.csproj.GenerateResource.Cache
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.exe
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.pdb
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\BusinessLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\EntitiesLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\BusinessLayer.pdb
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\EntitiesLayer.pdb
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\MainMenu.g.cs
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\MainMenu.baml
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutPokemon.baml
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutPokemon.g.cs
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutStade.g.cs
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutStade.baml
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutDresseur.g.cs
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutDresseur.baml
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlPokemon.g.cs
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlPokemon.baml
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlStade.g.cs
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlStade.baml
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlDresseur.g.cs
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlDresseur.baml
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\BDDAccessLayer.dll
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\BDDAccessLayer.pdb
+C:\Users\Thibault\Documents\VisualStudio2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\PokemonTournamentWPF.exe.config
+C:\Users\Thibault\Documents\VisualStudio2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.exe
+C:\Users\Thibault\Documents\VisualStudio2015\Projects\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\PokemonTournamentWPF.exe.config
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.exe
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\PokemonTournamentWPF.exe
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\PokemonTournamentWPF.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\BusinessLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\EntitiesLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\BusinessLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\EntitiesLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.csprojResolveAssemblyReference.cache
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutDresseur.baml
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutPokemon.baml
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutStade.baml
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutDresseur.g.cs
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutPokemon.g.cs
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\AjoutStade.g.cs
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlDresseur.g.cs
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlPokemon.g.cs
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlStade.g.cs
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\MainMenu.g.cs
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\App.g.cs
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF_MarkupCompile.cache
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF_MarkupCompile.lref
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlDresseur.baml
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlPokemon.baml
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\CtrlStade.baml
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\MainMenu.baml
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\MainWindow.baml
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.g.resources
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.Properties.Resources.resources
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\obj\Debug\PokemonTournamentWPF.csproj.GenerateResource.Cache
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\StubDataAccessLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\PokemonTournamentWPF\bin\Debug\StubDataAccessLayer.pdb

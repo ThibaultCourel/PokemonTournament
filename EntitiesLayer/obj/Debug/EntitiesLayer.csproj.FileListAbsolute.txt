@@ -1,0 +1,10 @@
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+C:\Users\Thibault\Documents\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb

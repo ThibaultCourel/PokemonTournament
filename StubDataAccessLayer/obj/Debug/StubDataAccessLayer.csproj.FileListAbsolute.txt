@@ -1,0 +1,14 @@
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.pdb
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.pdb
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Thibault\Documents\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb

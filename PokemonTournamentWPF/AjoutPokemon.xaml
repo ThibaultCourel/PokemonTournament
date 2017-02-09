@@ -1,0 +1,57 @@
+﻿<Window x:Class="PokemonTournamentWPF.AjoutPokemon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntitiesLayer;assembly=EntitiesLayer"
+        mc:Ignorable="d"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        WindowStartupLocation="CenterScreen"
+        Title="AjoutPokemon" Height="329.167" Width="267.378" 
+        ResizeMode="NoResize"
+        Icon="C:/Users/Thibault/Documents/Visual Studio 2015/Projects/PokemonTournamentConsole/Images/icon.ico"
+        >
+
+    <Window.Resources>
+        <ObjectDataProvider x:Key="dataFromEnum" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="local:ETypeElement"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+
+    <Grid>
+        <Button x:Name="cancel" Content="Annuler" HorizontalAlignment="Left" Margin="48,0,0,5" VerticalAlignment="Bottom" Width="76" Click="cancel_Click"/>
+        <Button x:Name="add" Content="Ajouter" HorizontalAlignment="Right" Margin="0,0,48,5" VerticalAlignment="Bottom" Width="74" Click="add_Click"/>
+        <TextBox x:Name="fg_nom_pokemon" Height="22" Margin="47,10,40,0" VerticalAlignment="Top" LostFocus="fgNom_LostFocus"/>
+        <TextBox x:Name="bg_nom_pokemon" Height="22" Margin="47,10,40,0" TextWrapping="Wrap" Text="Nom du Pokemon" VerticalAlignment="Top" Foreground="#FF198BB0" GotFocus="bgNom_GotFocus"/>
+
+        <ComboBox x:Name="cbElem" SelectedIndex="0" IsEditable="True" IsReadOnly="True" Margin="47,37,40,0" VerticalAlignment="Top" >
+            <ComboBox.ItemsSource>
+                <CompositeCollection>
+                    <ListBoxItem>Elément</ListBoxItem>
+                    <CollectionContainer Collection="{Binding Source={StaticResource dataFromEnum}}" />
+                </CompositeCollection>
+            </ComboBox.ItemsSource>
+        </ComboBox>
+        <TextBlock x:Name="caract" HorizontalAlignment="Left" Margin="86,76,0,0" TextWrapping="Wrap" Text="Caractéristiques" TextDecorations="Underline" VerticalAlignment="Top"/>
+
+        <TextBlock x:Name="life" HorizontalAlignment="Left" Margin="48,111,0,0" TextWrapping="Wrap" Text="Vie : " VerticalAlignment="Top"/>
+        <TextBox Text="{Binding ElementName=vie, Path=Value, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" Margin="79,103,145,163" />
+        <Slider x:Name="vie" Minimum="10" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="119,103,0,0" VerticalAlignment="Top" Width="130"/>
+
+        <TextBlock x:Name="str" HorizontalAlignment="Left" Margin="36,157,0,0" TextWrapping="Wrap" Text="Force : " VerticalAlignment="Top" RenderTransformOrigin="1.632,2.375"/>
+        <TextBox Text="{Binding ElementName=force, Path=Value, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" Margin="79,149,145,117" />
+        <Slider x:Name="force" Minimum="10" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="119,149,0,0" VerticalAlignment="Top" Width="130"/>
+
+        <TextBlock x:Name="dex" HorizontalAlignment="Left" Margin="31,197,0,0" TextWrapping="Wrap" Text="Agilité : " VerticalAlignment="Top"/>
+        <TextBox Text="{Binding ElementName=agilite, Path=Value, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" Margin="79,189,145,77" />
+        <Slider x:Name="agilite" Minimum="10" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="119,189,0,0" VerticalAlignment="Top" Width="130"/>
+
+        <TextBlock x:Name="intel" HorizontalAlignment="Left" Margin="4,239,0,0" TextWrapping="Wrap" Text="Intelligence : " VerticalAlignment="Top"/>
+        <TextBox Text="{Binding ElementName=intelligence, Path=Value, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" Margin="79,231,145,35" />
+        <Slider x:Name="intelligence" Minimum="10" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="119,231,0,0" VerticalAlignment="Top" Width="130"/>
+
+
+    </Grid>
+</Window>

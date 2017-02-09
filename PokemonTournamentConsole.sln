@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonTournamentConsole", "PokemonTournamentConsole\PokemonTournamentConsole.csproj", "{5398AB8D-58BF-434B-A1E1-BABBE99376FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{5A98EB82-1B36-4727-A6D5-EA7E9E053F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StubDataAccessLayer", "StubDataAccessLayer\StubDataAccessLayer.csproj", "{3E850DF5-40B3-4797-865B-07758D1A67E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesLayer", "EntitiesLayer\EntitiesLayer.csproj", "{2EF369A6-DA92-42F5-BEC3-94B7567C7943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonTournamentWPF", "PokemonTournamentWPF\PokemonTournamentWPF.csproj", "{9AC00F5C-0628-4D82-8BA0-E0B3D0D7066E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDDAccessLayer", "BDDAccessLayer\BDDAccessLayer.csproj", "{D93863D9-6414-43EF-B6D1-4F2160DE3B28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5398AB8D-58BF-434B-A1E1-BABBE99376FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5398AB8D-58BF-434B-A1E1-BABBE99376FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5398AB8D-58BF-434B-A1E1-BABBE99376FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5398AB8D-58BF-434B-A1E1-BABBE99376FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A98EB82-1B36-4727-A6D5-EA7E9E053F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A98EB82-1B36-4727-A6D5-EA7E9E053F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A98EB82-1B36-4727-A6D5-EA7E9E053F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A98EB82-1B36-4727-A6D5-EA7E9E053F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E850DF5-40B3-4797-865B-07758D1A67E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E850DF5-40B3-4797-865B-07758D1A67E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E850DF5-40B3-4797-865B-07758D1A67E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E850DF5-40B3-4797-865B-07758D1A67E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EF369A6-DA92-42F5-BEC3-94B7567C7943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF369A6-DA92-42F5-BEC3-94B7567C7943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF369A6-DA92-42F5-BEC3-94B7567C7943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF369A6-DA92-42F5-BEC3-94B7567C7943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC00F5C-0628-4D82-8BA0-E0B3D0D7066E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC00F5C-0628-4D82-8BA0-E0B3D0D7066E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC00F5C-0628-4D82-8BA0-E0B3D0D7066E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC00F5C-0628-4D82-8BA0-E0B3D0D7066E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D93863D9-6414-43EF-B6D1-4F2160DE3B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93863D9-6414-43EF-B6D1-4F2160DE3B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93863D9-6414-43EF-B6D1-4F2160DE3B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93863D9-6414-43EF-B6D1-4F2160DE3B28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

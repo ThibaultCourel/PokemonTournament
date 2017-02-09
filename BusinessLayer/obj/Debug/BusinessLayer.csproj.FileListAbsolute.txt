@@ -1,0 +1,22 @@
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\bin\Debug\BusinessLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\bin\Debug\BusinessLayer.pdb
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.pdb
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\bin\Debug\EntitiesLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\bin\Debug\StubDataAccessLayer.dll
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\bin\Debug\EntitiesLayer.pdb
+c:\users\thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\bin\Debug\BDDAccessLayer.dll
+C:\Users\Thibault\documents\visual studio 2015\Projects\PokemonTournamentConsole\BusinessLayer\bin\Debug\BDDAccessLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\bin\Debug\BDDAccessLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\bin\Debug\StubDataAccessLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\bin\Debug\BDDAccessLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Thibault\Documents\PokemonTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.pdb

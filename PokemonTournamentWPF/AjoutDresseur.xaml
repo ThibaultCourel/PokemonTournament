@@ -1,0 +1,86 @@
+﻿<Window x:Class="PokemonTournamentWPF.AjoutDresseur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntitiesLayer;assembly=EntitiesLayer"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        
+        Title="AjoutDresseur" Height="441.167" Width="267.378" 
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Icon="C:/Users/Thibault/Documents/Visual Studio 2015/Projects/PokemonTournamentConsole/Images/icon.ico"
+        >
+    <Window.Resources>
+        <ObjectDataProvider x:Key="dataFromEnum" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="local:ETypeElement"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+
+    <Grid Margin="0,0,0,16">
+        <Button x:Name="cancel" Content="Annuler" HorizontalAlignment="Left" Margin="45,0,0,-5" VerticalAlignment="Bottom" Width="76" Click="cancel_Click"/>
+        <Button x:Name="add" Content="Ajouter" HorizontalAlignment="Right" Margin="0,0,40,-5" VerticalAlignment="Bottom" Width="74" Click="add_Click"/>
+
+        <TextBox x:Name="nom_dresseur" Height="22" Margin="47,10,40,0" VerticalAlignment="Top" LostFocus="nom_dresseur_LostFocus"/>
+        <TextBox x:Name="bg_nom_dresseur" Height="22" Margin="47,10,40,0" TextWrapping="Wrap" Text="Nom du Dresseur" VerticalAlignment="Top" Foreground="#FF198BB0" GotFocus="bg_nom_dresseur_GotFocus"/>
+        <RadioButton x:Name="radioYes" GroupName="gotPokemon"  Content="Oui" HorizontalAlignment="Left" Margin="83,63,0,0" VerticalAlignment="Top" IsChecked="True" Checked="radioYes_Checked"/>
+        <RadioButton x:Name="radioNo" GroupName="gotPokemon" Content="Non" HorizontalAlignment="Left" Margin="147,63,0,0" VerticalAlignment="Top" Checked="radioNo_Checked"/>
+        <TextBlock x:Name="labelGotPokemon" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="54,42,0,0" TextWrapping="Wrap" Text="Utiliser un Pokemon existant ?" VerticalAlignment="Top"/>
+
+        <DataGrid x:Name="dataGrid_ajout_dresseur" AutoGenerateColumns="False" IsReadOnly="True" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Height="253" Width="241">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                <DataGridTextColumn Header="Nom" Binding="{Binding Nom}"/>
+                <DataGridTextColumn Header="Element" Binding="{Binding Element}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock x:Name="label_grid_gotPokemon" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="64,92,0,0" TextWrapping="Wrap" Text="Choisissez le Pokemon :" VerticalAlignment="Top"/>
+
+        <TextBlock x:Name="label_grid_noPokemon" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="75,92,0,0" TextWrapping="Wrap" Text="Créez le Pokemon :" VerticalAlignment="Top"/>
+        <TextBox x:Name="fg_nom_pokemon" Height="22" Margin="54,118,33,0" VerticalAlignment="Top" LostFocus="fgNom_LostFocus"/>
+        <TextBox x:Name="bg_nom_pokemon" Height="22" Margin="54,118,33,0" TextWrapping="Wrap" Text="Nom du Pokemon" VerticalAlignment="Top" Foreground="#FF198BB0" GotFocus="bgNom_GotFocus"/>
+
+        <ComboBox x:Name="cb_Elem" SelectedIndex="0" IsEditable="True" IsReadOnly="True" Margin="54,146,33,0" VerticalAlignment="Top" >
+            <ComboBox.ItemsSource>
+                <CompositeCollection>
+                    <ListBoxItem>Elément</ListBoxItem>
+                    <CollectionContainer Collection="{Binding Source={StaticResource dataFromEnum}}" />
+                </CompositeCollection>
+            </ComboBox.ItemsSource>
+        </ComboBox>
+        <TextBlock x:Name="caract" HorizontalAlignment="Left" Margin="88,180,0,0" TextWrapping="Wrap" Text="Caractéristiques" TextDecorations="Underline" VerticalAlignment="Top"/>
+
+        <TextBlock x:Name="life" HorizontalAlignment="Left" Margin="50,216,0,0" TextWrapping="Wrap" Text="Vie : " VerticalAlignment="Top"/>
+        <TextBox x:Name="life2" Text="{Binding ElementName=vie, Path=Value, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" Margin="81,208,143,156" />
+        <Slider x:Name="vie" Minimum="10" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="121,208,0,0" VerticalAlignment="Top" Width="130"/>
+
+        <TextBlock x:Name="str" HorizontalAlignment="Left" Margin="38,262,0,0" TextWrapping="Wrap" Text="Force : " VerticalAlignment="Top" RenderTransformOrigin="1.632,2.375"/>
+        <TextBox x:Name="str2" Text="{Binding ElementName=force, Path=Value, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" Margin="79,254,145,110" />
+        <Slider x:Name="force" Minimum="10" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="121,254,0,0" VerticalAlignment="Top" Width="130"/>
+
+        <TextBlock x:Name="dex" HorizontalAlignment="Left" Margin="33,302,0,0" TextWrapping="Wrap" Text="Agilité : " VerticalAlignment="Top"/>
+        <TextBox x:Name="dex2" Text="{Binding ElementName=agilite, Path=Value, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" Margin="79,294,145,70" />
+        <Slider x:Name="agilite" Minimum="10" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="121,294,0,0" VerticalAlignment="Top" Width="130"/>
+
+        <TextBlock x:Name="intel" HorizontalAlignment="Left" Margin="6,344,0,0" TextWrapping="Wrap" Text="Intelligence : " VerticalAlignment="Top"/>
+        <TextBox x:Name="intel2" Text="{Binding ElementName=intelligence, Path=Value, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" Margin="79,336,145,28" />
+        <Slider x:Name="intelligence" Minimum="10" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="121,336,0,0" VerticalAlignment="Top" Width="130"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="11,85,11,0" Stroke="Black" VerticalAlignment="Top" Width="239" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
+
+
+
+    </Grid>
+</Window>

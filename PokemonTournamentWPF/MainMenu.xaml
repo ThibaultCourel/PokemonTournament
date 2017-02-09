@@ -1,0 +1,171 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntitiesLayer;assembly=EntitiesLayer"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        
+        xmlns:local1="clr-namespace:PokemonTournamentWPF" x:Class="PokemonTournamentWPF.MainMenu"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        
+        Title="MainMenu" Height="550" Width="800" 
+        Icon="C:/Users/Thibault/Documents/Visual Studio 2015/Projects/PokemonTournamentConsole/Images/icon.ico"
+        >
+
+    <Window.Resources>
+        <ObjectDataProvider x:Key="dataFromEnum" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="local:ETypeElement"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+
+    <Grid Background="#FFF7E0B7">
+        <Image x:Name="title" HorizontalAlignment="Left" Height="57" Margin="43,0,0,0" VerticalAlignment="Top" Width="155" Source="C:/Users/Thibault/Documents/Visual Studio 2015/Projects/PokemonTournamentConsole/Images/alpha_title.png"/>
+
+        <Button x:Name="deco" Content="Se déconnecter" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="97" Height="25" Click="deco_Click"/>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="447" Margin="10,62,0,0" VerticalAlignment="Top" Width="589">
+            <TabItem x:Name="ItemPokemon" Header="Pokemons">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dataGridPokemon" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Height="365" Width="475">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                            <DataGridTextColumn Header="Nom" Binding="{Binding Nom}"/>
+                            <DataGridTextColumn Header="Element" Binding="{Binding Element}"/>
+                            <DataGridTextColumn Header="Caractéristiques" Binding="{Binding Caract}"/>
+                        </DataGrid.Columns>
+                        <DataGrid.ContextMenu>
+                            <ContextMenu >
+                                <MenuItem x:Name="menuItemPokemon" Header="Fiche Pokemon" Click="MenuItemPokemon_Click"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                    <ComboBox x:Name="cbElem_pokemon" SelectedIndex="0" IsEditable="True" IsReadOnly="True" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbElem_SelectionChanged" Height="23" >
+                        <ComboBox.ItemsSource>
+                            <CompositeCollection>
+                                <ListBoxItem Content="Préciser élément..."/>
+                                <CollectionContainer Collection="{Binding Source={StaticResource dataFromEnum}}" />
+                            </CompositeCollection>
+                        </ComboBox.ItemsSource>
+                    </ComboBox>
+
+                    <Button x:Name="addPokemon" Content="Ajouter" HorizontalAlignment="Left" Margin="507,103,0,0" VerticalAlignment="Top" Width="60" Height="60" Background="#FF5CB95C" Foreground="Black" FontWeight="Bold" Click="addPokemon_Click" />
+                    <Button x:Name="rmPokemon" Content="Suppr." HorizontalAlignment="Left" Margin="507,168,0,0" VerticalAlignment="Top" Width="60" Height="60" Background="#FFE64848" Foreground="Black" Click="rmPokemon_Click" FontWeight="Bold"/>
+                    <Button x:Name="editPokemon" Content="Modifier" HorizontalAlignment="Left" Margin="507,233,0,0" VerticalAlignment="Top" Width="60" Height="60" Background="#FFE2A22C" FontWeight="Bold"/>
+                    <Button x:Name="export_pokemon" Content="Exporter" HorizontalAlignment="Left" Margin="515,10,0,0" VerticalAlignment="Top" Width="58" Background="#FFE9FFF8" Click="export_pokemon_Click"/>
+                    <Button x:Name="import_pokemon" Content="Importer" HorizontalAlignment="Left" Margin="452,10,0,0" VerticalAlignment="Top" Width="58" Background="#FFE9FFF8" Click="import_pokemon_Click"/>
+                    <Button x:Name="print_pokemon" Content="Imprimer" HorizontalAlignment="Left" Margin="389,10,0,0" VerticalAlignment="Top" Width="58" Background="#FFE9FFF8" Click="print_pokemon_Click"/>
+
+                    <TextBox x:Name="search_pokemon" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" TextChanged="search_TextChanged" LostFocus="search_LostFocus"/>
+                    <TextBox x:Name="bg_search_pokemon" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Text="Recherche..." Foreground="#FF198BB0" 
+                             Background="White" GotFocus="bg_search_GotFocus" />
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="ItemStade" Header="Stades">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dataGridStade" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Height="365" Width="475" >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                            <DataGridTextColumn Header="Nom" Binding="{Binding Nom}"/>
+                            <DataGridTextColumn Header="Places" Binding="{Binding NbPlace}"/>
+                            <DataGridTextColumn Header="Element" Binding="{Binding Element}"/>
+                            <DataGridTextColumn Header="Caractéristiques" Binding="{Binding Caract}" />
+                        </DataGrid.Columns>
+                        <DataGrid.ContextMenu>
+                            <ContextMenu >
+                                <MenuItem x:Name="menuItemStade" Header="Fiche Stade" Click="menuItemStade_Click"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                    <Slider x:Name="slider_min" Foreground="DarkCyan" HorizontalAlignment="Left" Maximum="25" Minimum="1" Value="1" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Margin="165,16,0,0" VerticalAlignment="Top" Width="91" ValueChanged="slider_min_ValueChanged"/>
+                    <Slider x:Name="slider_max" Foreground="DarkCyan" HorizontalAlignment="Left" Maximum="25" Minimum="1" Value="25" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Margin="256,16,0,0" VerticalAlignment="Top" Width="91" ValueChanged="slider_max_ValueChanged"/>
+
+                    <TextBox x:Name="val_min" Text="{Binding Value, ElementName=slider_min, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="141,10,0,0" VerticalAlignment="Top" Width="19"/>
+                    <TextBox x:Name="val_max" Text="{Binding Value, ElementName=slider_max, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="352,10,0,0" VerticalAlignment="Top" Width="19"/>
+                    <TextBlock x:Name="search_by_place" HorizontalAlignment="Left" Text="Intervalle de place (x1000)" FontStyle="Italic" Foreground="DarkCyan" FontSize="9" VerticalAlignment="Top" Margin="207,4,0,0" RenderTransformOrigin="0.659,0.557"/>
+
+
+                    <TextBox x:Name="search_stade" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" Width="120" VerticalAlignment="Top" TextChanged="search_stade_TextChanged" LostFocus="search_stade_LostFocus"/>
+                    <TextBox x:Name="bg_search_stade" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" Width="120" VerticalAlignment="Top" Text="Recherche..." Foreground="#FF198BB0" 
+                             Background="White" GotFocus="bg_search_stade_GotFocus"/>
+
+                    <Button x:Name="export_stade" Content="Exporter" HorizontalAlignment="Left" Margin="515,10,0,0" VerticalAlignment="Top" Width="58" Background="#FFE9FFF8" Click="export_stade_Click"/>
+                    <Button x:Name="import_stade" Content="Importer" HorizontalAlignment="Left" Margin="452,10,0,0" VerticalAlignment="Top" Width="58" Background="#FFE9FFF8" Click="import_stade_Click"/>
+                    <Button x:Name="print_stade" Content="Imprimer" HorizontalAlignment="Left" Margin="389,10,0,0" VerticalAlignment="Top" Width="58" Background="#FFE9FFF8" Click="print_stade_Click"/>
+
+                    <Button x:Name="addStade" Content="Ajouter" HorizontalAlignment="Left" Margin="507,103,0,0" VerticalAlignment="Top" Width="60" Height="60" Background="#FF5CB95C" Foreground="Black" FontWeight="Bold" Click="addStade_Click" />
+                    <Button x:Name="rmStade" Content="Suppr." HorizontalAlignment="Left" Margin="507,168,0,0" VerticalAlignment="Top" Width="60" Height="60" Background="#FFE64848" Foreground="Black" FontWeight="Bold" Click="rmStade_Click"/>
+                    <Button x:Name="editStade" Content="Modifier" HorizontalAlignment="Left" Margin="507,233,0,0" VerticalAlignment="Top" Width="60" Height="60" Background="#FFE2A22C" FontWeight="Bold"/>
+                </Grid>
+
+            </TabItem>
+            <TabItem x:Name="ItemMatch" Header="Matchs">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dataGridMatch" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Height="365" Width="475">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                            <DataGridTextColumn x:Name="phase" Header="Phase" Binding="{Binding PhaseTournoi}" />
+                            <DataGridTextColumn x:Name="id_stade" Header="ID Stade" Binding="{Binding Arene.ID}"/>
+                            <DataGridTextColumn x:Name="nom_stade" Header="Nom Stade" Binding="{Binding Arene.Nom}" />
+                            <DataGridTextColumn x:Name="id_1" Header="ID Dresseur 1" Binding="{Binding Dresseur1.ID}"/>
+                            <DataGridTextColumn x:Name="id_2" Header="ID Dresseur 2" Binding="{Binding Dresseur2.ID}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="ItemDresseur" Header="Dresseurs">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dataGridDresseur" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Height="365" Width="475">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                            <DataGridTextColumn Header="Nom Dresseur" Binding="{Binding Nom}"/>
+                            <DataGridTextColumn x:Name="headID" Header="ID Pokemon" Binding="{Binding ID_Pokemon}"/>
+                            <DataGridTextColumn x:Name="headNom" Header="Nom Pokemon" Binding="{Binding Nom_Pokemon}"/>
+                            <DataGridTextColumn x:Name="headElem" Header="Element Pokemon" Binding="{Binding Element_Pokemon}" />
+                        </DataGrid.Columns>
+                        <DataGrid.ContextMenu>
+                            <ContextMenu >
+                                <MenuItem x:Name="menuItemDresseur" Header="Fiche Dresseur" Click="menuItemDresseur_Click"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                    <ComboBox x:Name="cb_dresseur" SelectedIndex="0" IsEditable="True" IsReadOnly="True" HorizontalAlignment="Left" Margin="260,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb_dresseur_SelectionChanged" Height="23">
+                        <ComboBox.ItemsSource>
+                            <CompositeCollection>
+                                <ListBoxItem Content="Elément Pokemon"/>
+                                <CollectionContainer Collection="{Binding Source={StaticResource dataFromEnum}}" />
+                            </CompositeCollection>
+                        </ComboBox.ItemsSource>
+                    </ComboBox>
+                    <TextBox x:Name="search_dresseur" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" TextChanged="search_dresseur_TextChanged" LostFocus="search_dresseur_LostFocus"/>
+                    <TextBox x:Name="bg_search_dresseur" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Text="Recherche Dresseur..." Foreground="#FF198BB0"
+                             Background="White" GotFocus="bg_search_dresseur_GotFocus"/>
+
+                    <TextBox x:Name="search_d_pokemon" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Width="120" Height="23" TextChanged="search_d_pokemon_TextChanged" LostFocus="search_d_pokemon_LostFocus"/>
+                    <TextBox x:Name="bg_search_d_pokemon" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Width="120" Height="23" Text="Recherche Pokemon..." Foreground="#FF198BB0"
+                             Background="White" GotFocus="bg_search_d_pokemon_GotFocus"/>
+
+                    <Button x:Name="export_dresseur" Content="Exporter" HorizontalAlignment="Left" Margin="515,10,0,0" VerticalAlignment="Top" Width="58" Background="#FFE9FFF8" Click="export_dresseur_Click"/>
+                    <Button x:Name="import_dresseur" Content="Importer" HorizontalAlignment="Left" Margin="452,10,0,0" VerticalAlignment="Top" Width="58" Background="#FFE9FFF8" Click="import_dresseur_Click"/>
+                    <Button x:Name="print_dresseur" Content="Imprimer" HorizontalAlignment="Left" Margin="389,10,0,0" VerticalAlignment="Top" Width="58" Background="#FFE9FFF8" Click="print_dresseur_Click"/>
+
+                    <Button x:Name="addDresseur" Content="Ajouter" HorizontalAlignment="Left" Margin="507,103,0,0" VerticalAlignment="Top" Width="60" Height="60" Background="#FF5CB95C" Foreground="Black" FontWeight="Bold" Click="addDresseur_Click"/>
+                    <Button x:Name="rmDresseur" Content="Suppr." HorizontalAlignment="Left" Margin="507,168,0,0" VerticalAlignment="Top" Width="60" Height="60" Background="#FFE64848" Foreground="Black" FontWeight="Bold" Click="rmDresseur_Click"/>
+                    <Button x:Name="editDresseur" Content="Modifier" HorizontalAlignment="Left" Margin="507,233,0,0" VerticalAlignment="Top" Width="60" Height="60" Background="#FFE2A22C" FontWeight="Bold"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="ItemCaracteristique" Header="Caractéristiques">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem x:Name="ItemBonus" Header="Bonus">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <local1:CtrlPokemon x:Name="fiche_pokemon" HorizontalAlignment="Right" Margin="0,0,10,36" VerticalAlignment="Bottom"/>
+        <local1:CtrlStade x:Name="fiche_stade" HorizontalAlignment="Right" Margin="0,0,10,36" VerticalAlignment="Bottom"/>
+        <local1:CtrlDresseur x:Name="fiche_dresseur" HorizontalAlignment="Right" Margin="0,0,10,36" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
